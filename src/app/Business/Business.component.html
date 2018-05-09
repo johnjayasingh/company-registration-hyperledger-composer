@@ -1,0 +1,35 @@
+<h3>Business Registration</h3>
+<form [formGroup]="myForm">
+  <div class="modal-body">
+    <div class="form-group text-left">
+      <label for="id">Comapny ID</label>
+      <input formControlName="id" type="text" class="form-control">
+    </div>
+    <div class="form-group text-left">
+      <label for="companyName">Company Name</label>
+      <input formControlName="companyName" type="text" class="form-control">
+    </div>
+    <div class="form-group text-left">
+      <label for="turnOver">Turn Over</label>
+      <input formControlName="turnOver" type="text" class="form-control">
+    </div>
+    <div class="form-group text-left">
+      <label for="numberOfEmployees">Number Of Employees</label>
+      <input formControlName="numberOfEmployees" type="number" class="form-control">
+    </div>
+    <div class="form-group text-left">
+      <label for="companyRegistrationDate">Company Registration Date</label>
+      <input formControlName="companyRegistrationDate" type="date" class="form-control">
+    </div>
+    
+
+
+
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+    <button (click)="addAsset(myForm);" type="button" class="btn btn-success" value="Refresh Page" 
+      data-dismiss="modal">Confirm</button>
+
+  </div>
+</form>

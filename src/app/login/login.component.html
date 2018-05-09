@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="jumbotron">
+    <h3>Login</h3>
+    <form [formGroup]="myForm">
+      <div class="modal-body">
+        <div class="form-group text-left">
+          <label for="transactionId">Username</label>
+          <input formControlName="username" type="text" class="form-control">
+        </div>
+        <div class="form-group text-left">
+          <label for="timestamp">Password</label>
+          <input formControlName="password" type="password" class="form-control">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button (click)="onSubmit(myForm);" type="submit" class="btn btn-success" data-dismiss="modal">Login</button>
+
+      </div>
+    </form>
+  </div>
+</div>
